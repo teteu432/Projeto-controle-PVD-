@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.view\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.view\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.model\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.model\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.view\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.view\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frmproduto.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\Frmproduto.cs",
+              "RelativeDocumentMoniker": "br.com.Projeto.view\\Frmproduto.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\Frmproduto.cs",
+              "RelativeToolTip": "br.com.Projeto.view\\Frmproduto.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAawEAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T04:49:24.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutoDao.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ProdutoDao.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.dao\\ProdutoDao.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ProdutoDao.cs",
+              "RelativeToolTip": "br.com.projeto.dao\\ProdutoDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T04:47:01.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.model\\Produtos.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.model\\Produtos.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.model\\Produtos.cs",
+              "RelativeToolTip": "br.com.projeto.model\\Produtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T04:46:59.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frmproduto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\Frmproduto.cs",
+              "RelativeDocumentMoniker": "br.com.Projeto.view\\Frmproduto.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\Frmproduto.cs [Design]",
+              "RelativeToolTip": "br.com.Projeto.view\\Frmproduto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T04:46:56.143Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
