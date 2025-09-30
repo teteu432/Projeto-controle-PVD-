@@ -107,7 +107,9 @@
     <Compile Include="br.com.projeto.model\Fornecedor.cs" />
     <Compile Include="br.com.projeto.model\Funcionario.cs" />
     <Compile Include="br.com.projeto.model\helpers.cs" />
+    <Compile Include="br.com.projeto.model\iemVenda.cs" />
     <Compile Include="br.com.projeto.model\Produtos.cs" />
+    <Compile Include="br.com.projeto.model\Vendas.cs" />
     <Compile Include="br.com.Projeto.view\frmclientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +133,12 @@
     </Compile>
     <Compile Include="br.com.Projeto.view\Frmproduto.Designer.cs">
       <DependentUpon>Frmproduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.Projeto.view\frmVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.Projeto.view\frmVendas.Designer.cs">
+      <DependentUpon>frmVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="br.com.Projeto.view\teste.cs">
       <SubType>Form</SubType>
@@ -157,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="br.com.Projeto.view\Frmproduto.resx">
       <DependentUpon>Frmproduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="br.com.Projeto.view\frmVendas.resx">
+      <DependentUpon>frmVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="br.com.Projeto.view\teste.resx">
       <DependentUpon>teste.cs</DependentUpon>

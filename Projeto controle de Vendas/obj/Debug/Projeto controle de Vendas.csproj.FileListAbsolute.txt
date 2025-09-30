@@ -45,3 +45,4 @@ C:\Users\Mateus\Desktop\PjtControleDeVendas\Projeto controle de Vendas\obj\Debug
 C:\Users\Mateus\Desktop\PjtControleDeVendas\Projeto controle de Vendas\obj\Debug\Projeto_controle_de_Vendas.br.com.Projeto.view.teste.resources
 C:\Users\Mateus\Desktop\PjtControleDeVendas\Projeto controle de Vendas\obj\Debug\Projeto_controle_de_Vendas.br.com.Projeto.view.FrmFornecedores.resources
 C:\Users\Mateus\Desktop\PjtControleDeVendas\Projeto controle de Vendas\obj\Debug\Projeto_controle_de_Vendas.br.com.Projeto.view.Frmproduto.resources
+C:\Users\Mateus\Desktop\PjtControleDeVendas\Projeto controle de Vendas\obj\Debug\Projeto_controle_de_Vendas.br.com.Projeto.view.frmVendas.resources

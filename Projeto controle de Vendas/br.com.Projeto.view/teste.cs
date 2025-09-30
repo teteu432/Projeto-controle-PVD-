@@ -42,5 +42,11 @@ namespace Projeto_controle_de_Vendas.br.com.Projeto.view
             Frmproduto abriP = new Frmproduto();
             abriP.ShowDialog();
         }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            frmVendas abrirV = new frmVendas();
+            abrirV.ShowDialog();
+        }
     }
 }

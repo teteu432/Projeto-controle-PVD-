@@ -67,5 +67,65 @@ namespace Projeto_controle_de_Vendas.br.com.Projeto.view
             tabProdutos.SelectedTab = tabPage1;
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Produtos obj = new Produtos();
+
+            obj.descricao = txtdescricao.Text;
+            obj.preco = decimal.Parse(txtPreco.Text);
+            obj.qtdestoque = int.Parse(txtqtdEstoque.Text);
+            obj.for_id = int.Parse(txtFornecedor.SelectedValue.ToString());
+            obj.id = int.Parse(txtCodigo.Text);
+
+            //Criar obj Dao
+
+            ProdutoDao dao = new ProdutoDao();
+            dao.AlterarProduto(obj);
+
+            new Helpers().Limpartela(this);
+            tabelaProduto.DataSource = dao.listarprodutos();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            Produtos obj = new Produtos();
+
+           
+            obj.id = int.Parse(txtCodigo.Text);
+
+            //Criar obj Dao
+
+            ProdutoDao dao = new ProdutoDao();
+            dao.ExcluirProduto(obj);
+
+            new Helpers().Limpartela(this);
+            tabelaProduto.DataSource = dao.listarprodutos();
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            string nome = "%" + txtPesquisa.Text + "%";
+            ProdutoDao dao = new ProdutoDao();
+
+            tabelaProduto.DataSource = dao.listarprodutosPorNome(nome);
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            string nome =  txtPesquisa.Text;
+            ProdutoDao dao = new ProdutoDao();
+
+            tabelaProduto.DataSource = dao.BuscarprodutosPorNome(nome);
+
+            if(tabelaProduto.Rows.Count == 0 || txtPesquisa.Text == string.Empty)
+            {
+                MessageBox.Show("nunhum prduto encontrado com esse Nome");
+                tabelaProduto.DataSource = dao.listarprodutos();
+
+
+            }
+            
+        }
     }
 }

@@ -32,6 +32,7 @@
             this.btnFuncionario = new System.Windows.Forms.Button();
             this.btnFornecedor = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
+            this.btnVendas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCliente
@@ -74,11 +75,22 @@
             this.btnProdutos.UseVisualStyleBackColor = true;
             this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
+            // btnVendas
+            // 
+            this.btnVendas.Location = new System.Drawing.Point(425, 243);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(122, 84);
+            this.btnVendas.TabIndex = 4;
+            this.btnVendas.Text = "Vendas";
+            this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
+            // 
             // teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnProdutos);
             this.Controls.Add(this.btnFornecedor);
             this.Controls.Add(this.btnFuncionario);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btnFuncionario;
         private System.Windows.Forms.Button btnFornecedor;
         private System.Windows.Forms.Button btnProdutos;
+        private System.Windows.Forms.Button btnVendas;
     }
 }
