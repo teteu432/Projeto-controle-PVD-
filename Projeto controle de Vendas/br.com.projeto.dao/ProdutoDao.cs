@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx;
 using Projeto_controle_de_Vendas.br.com.projeto.conexao;
 using Projeto_controle_de_Vendas.br.com.projeto.model;
 
@@ -188,7 +189,7 @@ namespace Projeto_controle_de_Vendas.br.com.projeto.dao
         }
             #endregion
 
-            #region Buscar Por nome
+        #region Buscar Por nome
              public DataTable BuscarprodutosPorNome(string nome)
         {
             try
@@ -225,9 +226,58 @@ namespace Projeto_controle_de_Vendas.br.com.projeto.dao
                 conexao.Close();
             }
         }
-            #endregion
+        #endregion
 
-        
+        #region Método retorna produto por codigo
+
+        public Produtos retornaProdutoPorCodigo(int id)
+        {
+            try
+            {
+
+                string sql = @"select * from tb_produtos where id= @id";
+
+                //organizar e executar o comando
+
+                MySqlCommand executacmd = new MySqlCommand(@sql, conexao);
+                executacmd.Parameters.AddWithValue("@id", id);
+                conexao.Open();
+
+                // Criar MysqlDataReader
+
+                MySqlDataReader rs = executacmd.ExecuteReader();
+
+                if (rs.Read())
+                {
+                    Produtos p = new Produtos();
+                    p.id = rs.GetInt32("id");
+
+                    p.descricao = rs.GetString("descricao");
+                    p.preco = rs.GetDecimal("preco");
+                    conexao.Close();
+                    return p;
+                }
+                else
+                {
+                    MessageBox.Show("Nenhumproduto encontrado");
+                    conexao.Close();
+                    return null;
+                }
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Aconteceu um erro" + erro);
+                return null;
+
+            }
+        }
+
+
+        #endregion
+
+
     }
 }   
 

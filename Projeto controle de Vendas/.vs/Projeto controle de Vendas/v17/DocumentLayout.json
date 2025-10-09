@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.view\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.view\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.view\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.view\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|c:\\users\\mateus\\desktop\\pjtcontroledevendas\\projeto controle de vendas\\br.com.projeto.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.view\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F11BBF3-DA83-4DB6-897D-BD057A3AD90F}|Projeto controle de Vendas.csproj|solutionrelative:br.com.projeto.dao\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,16 +38,53 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutoDao.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ProdutoDao.cs",
+              "RelativeDocumentMoniker": "br.com.projeto.dao\\ProdutoDao.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ProdutoDao.cs",
+              "RelativeToolTip": "br.com.projeto.dao\\ProdutoDao.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAawAYBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:48:58.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmclientes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\frmclientes.cs",
+              "RelativeDocumentMoniker": "br.com.Projeto.view\\frmclientes.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\frmclientes.cs [Design]",
+              "RelativeToolTip": "br.com.Projeto.view\\frmclientes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T23:12:22.728Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmVendas.cs",
+              "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\frmVendas.cs",
+              "RelativeDocumentMoniker": "br.com.Projeto.view\\frmVendas.cs",
+              "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.Projeto.view\\frmVendas.cs",
+              "RelativeToolTip": "br.com.Projeto.view\\frmVendas.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAYwF0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T23:27:27.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ClienteDAO.cs",
               "DocumentMoniker": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ClienteDAO.cs",
               "RelativeDocumentMoniker": "br.com.projeto.dao\\ClienteDAO.cs",
               "ToolTip": "C:\\Users\\Mateus\\Desktop\\PjtControleDeVendas\\Projeto controle de Vendas\\br.com.projeto.dao\\ClienteDAO.cs",
               "RelativeToolTip": "br.com.projeto.dao\\ClienteDAO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAPMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPUAAAAAAAAAAAA6wAcBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T22:06:58.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T22:06:58.408Z"
             },
             {
               "$type": "Document",

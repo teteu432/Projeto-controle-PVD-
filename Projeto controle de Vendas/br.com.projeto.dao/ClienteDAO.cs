@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx;
 using Projeto_controle_de_Vendas.br.com.projeto.conexao;
 using Projeto_controle_de_Vendas.br.com.projeto.model;
 
@@ -241,6 +242,50 @@ numero=@numero, complemento=@complemento, bairro=@bairro, cidade=@cidade, estado
 
         #endregion
 
+        #region Método retorna cliente por cpf
+        public Cliente retornaClientePorCpf(string cpf)
+        {
+            try
+            {
+                Cliente obj = new Cliente();
+                string sql = @"SELECT * FROM tb_clientes WHERE cpf = @cpf";
 
+                MySqlCommand executaacmd = new MySqlCommand(sql, conexao);
+                executaacmd.Parameters.AddWithValue("@cpf", cpf);
+
+                conexao.Open();
+                MySqlDataReader rs = executaacmd.ExecuteReader();
+
+                if(rs.Read())
+                {
+                    obj.codigo = rs.GetInt32("id");
+                    obj.nome = rs.GetString("nome");
+
+                    //conexao.Close();
+                    return obj;
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado");
+                  //  conexao.Close();
+                    return null;
+                }
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("aconteceu um erro: " + erro);
+                
+                return null;
+            }
+            finally
+            {
+                if (conexao.State == System.Data.ConnectionState.Open)
+                    conexao.Close();
+            }
+
+        }
+
+        #endregion
     }
 }

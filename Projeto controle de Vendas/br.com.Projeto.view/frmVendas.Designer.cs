@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -41,18 +45,16 @@
             this.txtqtd = new System.Windows.Forms.TextBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnadicionarittem = new System.Windows.Forms.Button();
+            this.btnRemoveritem = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.btnadicionarittem = new System.Windows.Forms.Button();
-            this.btnRemoveritem = new System.Windows.Forms.Button();
             this.tabelasProdutos = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnPagamento = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -97,6 +99,25 @@
             this.groupBox1.Text = "Cliente";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtData
+            // 
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtData.Location = new System.Drawing.Point(109, 36);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(140, 24);
+            this.txtData.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(27, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 29);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Data:";
+            // 
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,6 +156,7 @@
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(140, 29);
             this.txtCpf.TabIndex = 24;
+            this.txtCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCpf_KeyPress);
             // 
             // groupBox2
             // 
@@ -164,6 +186,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(295, 29);
             this.txtCodigo.TabIndex = 33;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtdescricao
             // 
@@ -202,6 +225,31 @@
             this.label3.Text = "Preço (R$):";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // btnadicionarittem
+            // 
+            this.btnadicionarittem.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnadicionarittem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadicionarittem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnadicionarittem.Location = new System.Drawing.Point(87, 244);
+            this.btnadicionarittem.Name = "btnadicionarittem";
+            this.btnadicionarittem.Size = new System.Drawing.Size(172, 42);
+            this.btnadicionarittem.TabIndex = 4;
+            this.btnadicionarittem.Text = "Adicionar item";
+            this.btnadicionarittem.UseVisualStyleBackColor = false;
+            this.btnadicionarittem.Click += new System.EventHandler(this.btnadicionarittem_Click);
+            // 
+            // btnRemoveritem
+            // 
+            this.btnRemoveritem.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRemoveritem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveritem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRemoveritem.Location = new System.Drawing.Point(289, 244);
+            this.btnRemoveritem.Name = "btnRemoveritem";
+            this.btnRemoveritem.Size = new System.Drawing.Size(164, 42);
+            this.btnRemoveritem.TabIndex = 5;
+            this.btnRemoveritem.Text = "Remover Item";
+            this.btnRemoveritem.UseVisualStyleBackColor = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -235,35 +283,30 @@
             this.label15.TabIndex = 26;
             this.label15.Text = "Código:";
             // 
-            // btnadicionarittem
-            // 
-            this.btnadicionarittem.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnadicionarittem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadicionarittem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnadicionarittem.Location = new System.Drawing.Point(87, 244);
-            this.btnadicionarittem.Name = "btnadicionarittem";
-            this.btnadicionarittem.Size = new System.Drawing.Size(172, 42);
-            this.btnadicionarittem.TabIndex = 4;
-            this.btnadicionarittem.Text = "Adicionar item";
-            this.btnadicionarittem.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveritem
-            // 
-            this.btnRemoveritem.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnRemoveritem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveritem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRemoveritem.Location = new System.Drawing.Point(289, 244);
-            this.btnRemoveritem.Name = "btnRemoveritem";
-            this.btnRemoveritem.Size = new System.Drawing.Size(164, 42);
-            this.btnRemoveritem.TabIndex = 5;
-            this.btnRemoveritem.Text = "Remover Item";
-            this.btnRemoveritem.UseVisualStyleBackColor = false;
-            // 
             // tabelasProdutos
             // 
+            this.tabelasProdutos.AllowUserToAddRows = false;
+            this.tabelasProdutos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabelasProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tabelasProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tabelasProdutos.DefaultCellStyle = dataGridViewCellStyle2;
             this.tabelasProdutos.Location = new System.Drawing.Point(661, 158);
             this.tabelasProdutos.Name = "tabelasProdutos";
+            this.tabelasProdutos.ReadOnly = true;
             this.tabelasProdutos.Size = new System.Drawing.Size(703, 353);
             this.tabelasProdutos.TabIndex = 6;
             // 
@@ -278,13 +321,13 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "TOTAL (R$):";
             // 
-            // textBox1
+            // txtTotal
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(785, 531);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 29);
-            this.textBox1.TabIndex = 35;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(785, 531);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(295, 29);
+            this.txtTotal.TabIndex = 35;
             // 
             // btncancelar
             // 
@@ -310,33 +353,15 @@
             this.btnPagamento.Text = "Pagamento";
             this.btnPagamento.UseVisualStyleBackColor = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(27, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 29);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Data:";
-            // 
-            // txtData
-            // 
-            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtData.Location = new System.Drawing.Point(109, 36);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(140, 24);
-            this.txtData.TabIndex = 29;
-            // 
             // frmVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1441, 686);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnPagamento);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tabelasProdutos);
             this.Controls.Add(this.groupBox2);
@@ -345,6 +370,7 @@
             this.Name = "frmVendas";
             this.Text = "Vendas";
             this.Load += new System.EventHandler(this.frmVendas_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmVendas_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -379,7 +405,7 @@
         private System.Windows.Forms.Button btnRemoveritem;
         private System.Windows.Forms.DataGridView tabelasProdutos;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnPagamento;
         private System.Windows.Forms.TextBox txtData;
