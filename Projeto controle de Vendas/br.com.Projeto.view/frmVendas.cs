@@ -82,23 +82,59 @@ namespace Projeto_controle_de_Vendas.br.com.Projeto.view
 
         private void btnadicionarittem_Click(object sender, EventArgs e)
         {
-            qtd = int.Parse(txtqtd.Text);
-            preco = decimal.Parse(txtPreco.Text);
+            try
+            {
+                qtd = int.Parse(txtqtd.Text);
+                preco = decimal.Parse(txtPreco.Text);
 
-            subtotal = qtd * preco;
+                subtotal = qtd * preco;
 
-            total += subtotal;
+                total += subtotal;
 
-            carrinho.Rows.Add(int.Parse(txtCodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
+                carrinho.Rows.Add(int.Parse(txtCodigo.Text), txtdescricao.Text, qtd, preco, subtotal);
 
+                txtTotal.Text = total.ToString();
+
+                txtCodigo.Clear();
+                txtdescricao.Clear();
+                txtqtd.Clear();
+                txtPreco.Clear();
+
+                txtCodigo.Focus();
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Digite o códigodo prouto");
+            }
+        }
+
+        private void btnRemoveritem_Click(object sender, EventArgs e)
+        {
+            //Remove item
+            decimal subproduto = decimal.Parse(tabelasProdutos.CurrentRow.Cells[4].Value.ToString());
+            int indice = tabelasProdutos.CurrentRow.Index;
+
+            DataRow linha = carrinho.Rows[indice];
+
+            carrinho.Rows.Remove(linha);
+            carrinho.AcceptChanges();
+
+            total -= subproduto;
             txtTotal.Text = total.ToString();
 
-            txtCodigo.Clear();
-            txtdescricao.Clear();
-            txtqtd.Clear();
-            txtPreco.Clear();
+            MessageBox.Show("Item removido do Carrinho com sucesso");
+        }
 
-            txtCodigo.Focus();
+        private void btnPagamento_Click(object sender, EventArgs e)
+        {
+            frmPagamentos tela = new frmPagamentos(cliente, carrinho);
+
+            //Tranferindo informação de uma tela para outra
+
+            tela.txtTotal.Text = total.ToString();
+
+            tela.ShowDialog();
         }
 
         private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)

@@ -21,32 +21,32 @@ namespace Projeto_controle_de_Vendas.br.com.Projeto.view
         {
             frmclientes AbrirC = new frmclientes();
 
-            AbrirC.ShowDialog();
+            AbrirC.Show();
 
         }
 
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
             frmfuncionarios abrirF = new frmfuncionarios();
-            abrirF.ShowDialog();
+            abrirF.Show();
         }
 
         private void btnFornecedor_Click(object sender, EventArgs e)
         {
             FrmFornecedores abrirFornecedor = new FrmFornecedores();
-            abrirFornecedor.ShowDialog();
+            abrirFornecedor.Show();
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             Frmproduto abriP = new Frmproduto();
-            abriP.ShowDialog();
+            abriP.Show();
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
         {
             frmVendas abrirV = new frmVendas();
-            abrirV.ShowDialog();
+            abrirV.Show();
         }
     }
 }
